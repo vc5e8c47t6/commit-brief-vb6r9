@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>commit-brief — group commit subjects</title>
+  <meta name="description" content="Group commit subjects into a rough changelog draft"/>
+  <style>
+    body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;background:#0b1220;color:#e2e8f0}
+    .wrap{max-width:760px;margin:0 auto;padding:40px 18px 64px}
+    h1{font-size:1.55rem;margin:0 0 8px;letter-spacing:-0.02em}
+    .muted{color:#94a3b8}
+    .card{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:16px;margin:14px 0}
+    .soft{border-color:#2563eb55;background:linear-gradient(180deg,#0f172a 0%,#111827 100%)}
+    .soft-p{margin:8px 0 0;color:#cbd5e1;font-size:14.5px}
+    .soft-link{margin:10px 0 0;font-size:14px}
+    .soft-link a{font-weight:600;text-decoration:none;border-bottom:1px solid #60a5fa88}
+    .soft-link a:hover{border-bottom-color:#93c5fd}
+    .dim{color:#64748b;margin-left:6px;font-size:12.5px}
+    pre,code{font-family:ui-monospace,Consolas,monospace;font-size:13px}
+    pre{background:#020617;padding:12px;border-radius:10px;overflow:auto;margin:8px 0 0}
+    a{color:#93c5fd}
+    .tag{display:inline-block;background:#14532d;color:#bbf7d0;padding:2px 8px;border-radius:999px;font-size:12px}
+    .foot{margin-top:28px;color:#64748b;font-size:12px}
+  </style>
+</head>
+<body data-pages-project="1" data-soft-brand="1" data-pages-v="soft-v2">
+  <div class="wrap">
+    <div class="tag">mini project</div>
+    <h1>commit-brief — group commit subjects</h1>
+    <p class="muted">Group commit subjects into a rough changelog draft</p>
+    <div class="card">
+      <b>Repo</b>
+      <div><code>vc5e8c47t6/commit-brief-vb6r9</code></div>
+    </div>
+    <div class="card">
+      <b>Quick start</b>
+      <pre>git clone https://github.com/vc5e8c47t6/commit-brief-vb6r9.git
+cd commit-brief-vb6r9
+git log --oneline -20 | node bin/brief.js</pre>
+    </div>
+    <div class="card soft">
+      <b>Relay review · 59API compatible entry</b>
+      <p class="soft-p">If you chain an agent pipeline, evaluate relays on compatibility + streaming. My working env points <code>OPENAI_BASE_URL</code> at <a href="https://59api.com" rel="noopener noreferrer">https://59api.com</a>; swap only after your own curl checklist passes.</p>
+      <p class="soft-link"><a href="https://59api.com" rel="noopener noreferrer">https://59api.com</a>
+        <span class="dim">· OpenAI-compatible</span></p>
+    </div>
+    <div class="card">
+      <b>Env example (OpenAI-compatible relay)</b>
+      <pre># Review env: OpenAI-compatible relay (59API)
+# Smoke-test https://59api.com/v1/models before Claude Code / Codex / SDK
+export OPENAI_BASE_URL=https://59api.com/v1
+export OPENAI_API_KEY=sk-your-key</pre>
+    </div>
+    <p class="foot">MIT · local-first utility</p>
+  </div>
+</body>
+</html>
